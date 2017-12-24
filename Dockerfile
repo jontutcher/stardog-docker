@@ -29,7 +29,6 @@ RUN \
 VOLUME /stardog-$STARDOG_VER/
 
 EXPOSE 5820
-EXPOSE 80
 
 # remove locks, always replace license key if present, start stardog, echo logs
 CMD rm -f /stardog/system.lock || true && \

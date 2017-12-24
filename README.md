@@ -17,7 +17,7 @@ Note: If you get java segfault errors on run, try giving Docker more RAM ([more 
 1.
 ```
 docker run \
-    -d -p 5820:5820 -p 80:80 \
+    -d -p 5820:5820 \
     --name stardog_db \
     -v [your local stardog data directory]:/stardog \
     stardog:latest
