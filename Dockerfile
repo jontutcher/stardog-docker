@@ -9,6 +9,8 @@ RUN curl http://packages.stardog.com/rpms/stardog.repo > /etc/yum.repos.d/stardo
 
 # User data directory for $STARDOG_HOME
 VOLUME ["/stardog"]
+# Potential volume for license key to be lifted at runtime
+VOLUME ["/stardog-license"]
 
 # Add the stardog zip file and license if present
 COPY resources/stardog-license-key.bin /stardog-license/stardog-license-key.bin
