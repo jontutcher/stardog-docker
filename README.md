@@ -6,8 +6,7 @@ This image can be built either with or without a stardog license key 'baked in'.
 
 ## To Build
 
-1. Download Stardog, place in new `resources` directory
-    * To build with a license key baked in, add `stardog-license-key.bin` to this directory too
+1. (optiona) To build with a license key baked in, add `stardog-license-key.bin` to a new `resources` directory in the root of this repo.
 2. `docker build --tag stardog:latest .`
 
 ## To Run
